@@ -26,7 +26,7 @@ function verificarChute() {
   let chute = document.querySelector("input").value;
   if (chute == numeroSecreto) {
     exibirTextoNaTela("h1", "Você acertou");
-    let palavraTentiva = tentativas > 1 ? `tentativas` : `tentaiva`;
+    let palavraTentiva = tentativas > 1 ? `tentativas` : `tentativa`;
     let mensagemTentaivas = `Você descobriu o número secreto com ${tentativas} ${palavraTentiva}`;
     exibirTextoNaTela("p", mensagemTentaivas);
     document.getElementById("reiniciar").removeAttribute("disabled");
